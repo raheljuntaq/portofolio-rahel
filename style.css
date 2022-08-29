@@ -1,0 +1,247 @@
+body {
+  min-height: 1500px;
+}
+.elemen .navbar {
+  min-height: 90px;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+}
+.navbar-nav {
+  font-size: 25px;
+}
+
+.navbar-nav li {
+  margin-right: 30px;
+}
+
+.aboutme {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../image/bghitam.png);
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.nama {
+  font-size: 50px;
+}
+
+span {
+  color: #f9004d;
+}
+
+.desc {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  width: 40%;
+  padding-left: 20px;
+}
+.deskripsi {
+  font-size: 25px;
+}
+
+.portfol {
+  background: rgba(0, 0, 0, 0.982);
+}
+
+.btn {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.projects {
+  background: #101010;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.title h2 {
+  color: white;
+  font-size: 75px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+
+.card {
+  height: 520px;
+  width: 30rem;
+  padding: 20px 35px;
+  color: #fcfc;
+  background: #191919;
+  border-radius: 20px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card i {
+  font-size: 50px;
+
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
+}
+
+.pra p {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+.apk {
+  max-width: 70%;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+footer ul {
+  display: flex;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-list {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+footer ul,
+footer .sosialmedia,
+footer p {
+  margin-bottom: 20px;
+}
+a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+}
+.last {
+  color: #f9004d;
+}
+li {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+}
+
+.sosialmedia a {
+  margin: 0 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  margin-bottom: 50px;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .deskripsi {
+    font-size: 2.5vw;
+  }
+  .card {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .content {
+    padding: auto;
+    padding-bottom: 100px;
+  }
+  .deskripsi {
+    font-size: 1rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .title {
+    justify-content: center;
+  }
+
+  .box {
+    padding: 30px;
+    display: block;
+    width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
